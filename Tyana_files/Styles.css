@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(250, 195, 243);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+background-image: linear-gradient(to right, violet, pink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    /* Ensure the page takes at least the full height of the viewport */
+    margin: 0;
+    /* Remove default margin */
+
+    /* Set background color if needed */
+}
+
+.container {
+    text-align: center;
+    max-width: 200px; /* Adjust the maximum width as needed */
+    height: auto;
+
+    /* Center the text within the container */
+}
+
+.main-image-container {
+    max-width: 100%;
+    /* Adjust the maximum width to fit the viewport */
+    height: auto;
+    /* Maintain aspect ratio */
+    overflow: hidden;
+    /* Hide overflowing content */
+}
+
+.tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+/* Your existing CSS styles */
+
+@media screen and (max-width: 414px) {
+    /* Media query for screens with a maximum width of 414px (typical mobile width) */
+
+    /* Adjust the width of the image for mobile */
+    .custom-image {
+        max-width: 220px;
+        /* Adjust the maximum width as needed for mobile */
+    }
+}
+
+h1 {
+    font-family: 'Pacifico', sans-serif;
+    margin-top: -90px;
+    font-weight: 400; /* Adjust the font weight to make it thinner */
+}
+
+
+.newimage {
+    width: 350px;
+    /* Adjust the width to your desired size */
+    height: auto;
+    /* Let the height adjust automatically to maintain aspect ratio */
+}
+
+.userLocationElement {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px; /* Adjust the font size as needed */
+}
+
+
+h1 {
+    font-size: 47px;
+    margin-top: -40px;
+    /* Adjust the font size to your desired value */
+}
+
+header {
+    width: 95%;
+    max-width: 688px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 680px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+}
+
+.tile {
+    width: 80%;
+    height: 55px;
+    margin: 7px;
+    border-radius: 48px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    margin-top: -35px;
+
+    animation-name: breathe;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to bottom, rgba(211, 211, 211, 1), rgba(255, 255, 255, 1));
+    /* Fully opaque colors */
+    /* Adjust the colors and stops as needed */
+}
+
+@keyframes breathe {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.image-container {
+    height: 296px;
+    width: autopx;
+    overflow: hidden;
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    max-height: 100%; /* Ensure the image doesn't exceed the container height */
+    height: auto;
+    width: auto;
+}
+
+.icon {
+    margin: 4px 8px;
+    width: 64px;
+    height: 52px;
+}
+
+.tile:hover {
+    transition: cubic-bezier(0.07, 1.41, 0.82, 1.41) 0.2s;
+    transform: scale(1.03);
+}
+
+body {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    /* Center the background image vertically and horizontally */
+    background-position: center center;
+}
+
+.location-section {
+    font-size: 20px; /* Adjust the font size as needed */
+    text-align: center; /* Center the text */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#pin-emoji {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+/* Add this in your external CSS file (Styles.css) */
+.move-left {
+    margin-left: 10px;
+    /* Adjust the margin-left value as needed */
+}
+
+/* Your existing CSS code */
+
+/* Add this media query for screens with a maximum width of 414px (typical mobile width) */
+@media screen and (max-width: 414px) {
+    .tile img.custom-image {
+        max-width: 300px;
+        /* Adjust the maximum width as needed for mobile */
+    }
+}
